@@ -16,7 +16,7 @@ $computername		= $_GET["computername"];
 $serial 			= $_GET["serial"];
 $mostfrequentuser	= $_GET["mostfrequentuser"];
 
-// Mail info
+// Email notification when new manifest is created
 $from = "munki-enroll@domain.com";
 $to = "user@domain.com";
 $subject = "Munki Enroll Notice for $computername";
