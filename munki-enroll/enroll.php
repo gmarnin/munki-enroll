@@ -25,9 +25,10 @@ $subject = "Munki Enroll Notice for $computername";
 if ( file_exists( '../manifests/' . $computername ) )
     {
     	// Manifest already exists
-    	$message = "manifest already exists for $computername";
+    	$message = "manifest already exists for $computername. Exiting";
         (mail($to, $subject, $message, "From: " . $from));
-        echo("Manifest already exists for $computername");
+        echo("Manifest already exists for $computername. Exiting");
+        exit();
     } 
  
  else
