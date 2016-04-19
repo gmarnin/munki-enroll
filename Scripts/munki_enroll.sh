@@ -5,8 +5,6 @@
 
 ComputerName=`/bin/hostname | cut -f1 -d"."`
 MostFrequentUser=`/usr/sbin/ac -p | /usr/bin/sort -nrk 2 | awk 'NR == 2 { print $1; exit }'`
-
-# Using this method to check the serial number which will also work on the old school Mac Pro
 SERIAL=`/usr/sbin/ioreg -c IOPlatformExpertDevice | grep IOPlatformSerialNumber | awk '{print $4}' | tr -d '"'`
 
 SUBMITURL="https://domain/munki/munki-enroll/enroll.php"
