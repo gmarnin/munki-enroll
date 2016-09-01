@@ -4,7 +4,7 @@ A set of scripts to automatically enroll clients in Munki, allowing for a very f
 
 My fork of Cody Eding's Munki Enroll project adds the serial number and the most frequent logged in user to the manifest to help further idenitfy which Mac the manifest belongs to. I also added email notification so I know when a new manifest is created in Munki. 
 
-## Why Munki Enroll?
+## Why Use Munki Enroll?
 
 My organization has a very homogenous environment consisting of several identical deployments. We deploy machines with a basic manifest, like "room_28". This works wonderfully, until computer three in room 28 needs a special piece of software.
 
